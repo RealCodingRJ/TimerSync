@@ -95,7 +95,5 @@ async def get_Timer():
         if timer == 60 * 25:
             timerSettingConverted("Done")
 
-        else:
-            print("Seconds: ", timer)
 
 asyncio.run(get_Timer())
