@@ -2,6 +2,7 @@
 import time
 from string import Template
 from typing import TypeAlias
+from TimerSecondsConverted import timerSettingConverted
 
 TimerTyped: TypeAlias = int
 
@@ -19,86 +20,88 @@ async def get_Timer() -> None:
             timer += 1
 
             if timer == 25 * 60:
-                print("[Timer] DONE")
 
-                if timer == 60:
-                    print("1 Minute Past")
+                timerSettingConverted(timer, "1 Minute Past")
 
-                elif timer == 60 * 2:
-                    print("2 Minutes Past")
+            elif timer == 60 * 2:
+                timerSettingConverted(timer, "2 Minutes Past")
 
-                elif timer == 60 * 3:
-                    print("3 Minutes Past")
+            elif timer == 60 * 3:
+                timerSettingConverted(timer, "3 Minutes Past")
 
-                elif timer == 60 * 4:
-                    print("4 Minutes Past")
 
-                elif timer == 60 * 5:
-                    print("5 Minutes Past")
+            elif timer == 60 * 4:
+                timerSettingConverted(timer, "3 Minutes Past")
 
-                elif timer == 60 * 6:
-                    print("6 Minutes Past")
 
-                elif timer == 60 * 7:
-                    print("7 Minutes Past")
+            elif timer == 60 * 5:
+                timerSettingConverted(timer, "5 Minutes Past")
 
-                elif timer == 60 * 8:
-                    print("8 Minutes Past")
 
-                elif timer == 60 * 9:
-                    print("9 Minutes Past")
+            elif timer == 60 * 6:
+                timerSettingConverted(timer, "6 Minutes Past")
 
-                elif timer == 60 * 10:
-                    print("10 Minutes Past")
 
-                elif timer == 60 * 11:
-                    print("11 Minutes Past")
+            elif timer == 60 * 7:
+                timerSettingConverted(timer, "7 Minutes Past")
 
-                elif timer == 60 * 12:
-                    print("12 Minutes Past")
 
-                elif timer == 60 * 13:
-                    print("13 Minutes Past")
+            elif timer == 60 * 8:
+                timerSettingConverted(timer, "8 Minutes Past")
 
-                elif timer == 60 * 14:
-                    print("14 Minutes Past")
+            elif timer == 60 * 9:
+                timerSettingConverted(timer, "9 Minutes Past")
 
-                elif timer == 60 * 15:
-                    print("15 Minutes Past")
+            elif timer == 60 * 10:
+                timerSettingConverted(timer, "10 Minutes Past")
 
-                elif timer == 60 * 16:
-                    print("16 Minutes Past")
+            elif timer == 60 * 11:
 
-                elif timer == 60 * 17:
-                    print("17 Minutes Past")
+                timerSettingConverted(timer, "11 Minutes Past")
 
-                elif timer == 60 * 18:
-                    print("18 Minutes Past")
+            elif timer == 60 * 12:
+                timerSettingConverted(timer, "12 Minutes Past")
 
-                elif timer == 60 * 19:
-                    print("19 Minutes Past")
+            elif timer == 60 * 13:
+                timerSettingConverted(timer, "13 Minutes Past")
 
-                elif timer == 60 * 20:
-                    print("20 Minutes Past")
+            elif timer == 60 * 14:
+                timerSettingConverted(timer, "14 Minutes Past")
 
-                elif timer == 60 * 21:
-                    print("21 Minutes Past")
+            elif timer == 60 * 15:
+                timerSettingConverted(timer, "15 Minutes Past")
 
-                elif timer == 60 * 22:
-                    print("22 Minutes Past")
+            elif timer == 60 * 16:
+                timerSettingConverted(timer, "16 Minutes Past")
 
-                elif timer == 60 * 23:
-                    print("23 Minutes Past")
+            elif timer == 60 * 17:
+                timerSettingConverted(timer, "17 Minutes Past")
 
-                elif timer == 60 * 24:
-                    print("24 Minutes Past")
+            elif timer == 60 * 18:
+                timerSettingConverted(timer, "18 Minutes Past")
 
-                elif timer == 60 * 25:
-                    print("Timer Done")
+            elif timer == 60 * 19:
+                timerSettingConverted(timer, "19 Minutes Past")
 
+            elif timer == 60 * 20:
+                timerSettingConverted(timer, "20 Minutes Past")
+
+            elif timer == 60 * 21:
+                timerSettingConverted(timer, "21 Minutes Past")
+
+            elif timer == 60 * 22:
+                timerSettingConverted(timer, "22 Minutes Past")
+
+            elif timer == 60 * 23:
+                timerSettingConverted(timer, "23 Minutes Past")
+
+            elif timer == 60 * 24:
+                timerSettingConverted(timer, "24 Minutes Past")
+
+            elif timer == 60 * 25:
+                timerSettingConverted(timer, "Done")
             else:
                 get_time()
-                print("[Seconds]", TIMESeconds.substitute(seconds=timer))
 
     except NameError:
         print("Error")
